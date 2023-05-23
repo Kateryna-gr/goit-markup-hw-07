@@ -74,6 +74,52 @@ button {
   }
 }
 
+.team-container {
+  min-width: 320px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 82px;
+
+  outline: 1px solid red;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-container {
+    max-width: 768px;
+    padding: 0 108px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .team-container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+.customer-container {
+  min-width: 320px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  outline: 1px solid red;
+}
+
+@media only screen and (min-width: 768px) {
+  .customer-container {
+    max-width: 768px;
+    padding: 0 108px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .customer-container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 .section {
   padding: 96px 0;
 }
@@ -198,13 +244,12 @@ button {
 }
 
 .heading-main {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
   margin-bottom: 72px;
+  color: #fff;
 
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -216,6 +261,7 @@ button {
 
 @media only screen and (min-width: 768px) {
   .heading-main {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
@@ -258,6 +304,16 @@ button {
 
 .heading-third {
   color: var(--dark-grey);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.heading-third.feature {
+  color: var(--dark-grey);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -280,6 +336,16 @@ button {
   }
 }
 
+.socials-wrap {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .socials-wrap {
+    margin-left: auto;
+  }
+}
+
 .footer-par {
   color: var(--white);
   font-weight: 500;
@@ -287,6 +353,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-par {
+    text-align: left;
+  }
 }
 
 .p-text {
@@ -364,12 +437,6 @@ button {
 .subscribe-icon {
   position: absolute;
   margin-left: 16px;
-}
-
-.footer {
-  background-color: var(--dark-grey);
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .hero {
@@ -450,12 +517,12 @@ button {
 
 .doing {
   display: none;
+  padding-top: 0;
 }
 
 @media only screen and (min-width: 1200px) {
   .doing {
     display: block;
-    padding-top: 0;
   }
 }
 
@@ -619,13 +686,47 @@ button {
   fill: currentColor;
 }
 
+.footer {
+  background-color: var(--dark-grey);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-flex {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-flex {
+    flex-direction: row;
+    justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-flex {
+    gap: 0;
+  }
 }
 
 .container-footer {
-  margin-right: 120px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-footer {
+    margin: 0px;
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-footer {
+    margin-right: 120px;
+  }
 }
 
 .subscribe-form {
