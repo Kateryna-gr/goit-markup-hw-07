@@ -910,19 +910,19 @@ button {
   row-gap: 48px;
 }
 
-.works-list-items {
+.works-list-item {
   width: 396px;
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-  .works-list-items {
+  .works-list-item {
     width: 356px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .works-list-items {
+  .works-list-item {
     width: 360px;
   }
 }
