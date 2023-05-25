@@ -499,7 +499,7 @@ button {
 .hero {
   background-color: var(--dark-grey);
   padding: 112x 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/people-office_mob@1x.jpg);
   max-width: 1440px;
   height: 432px;
   margin: 0 auto;
@@ -508,9 +508,21 @@ button {
   background-size: cover;
 }
 
+@media only screen and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/people-office_tab@1x.jpg);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     height: 436px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/people-office_@1x.jpg);
   }
 }
 
