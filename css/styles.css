@@ -910,6 +910,12 @@ button {
   row-gap: 48px;
 }
 
+@media only screen and (min-width: 768px) {
+  .works-list {
+    justify-content: flex-start;
+  }
+}
+
 .works-list-item {
   width: 396px;
   display: block;
