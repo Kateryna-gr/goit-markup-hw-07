@@ -51,7 +51,6 @@ button {
 }
 
 .container {
-  min-width: 320px;
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
@@ -67,69 +66,6 @@ button {
 
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
-
-.team-container {
-  min-width: 320px;
-  max-width: 428px;
-  margin: 0 auto;
-  padding: 0 82px;
-}
-
-@media only screen and (min-width: 768px) {
-  .team-container {
-    max-width: 768px;
-    padding: 0 108px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .team-container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
-
-.customer-container {
-  min-width: 320px;
-  max-width: 428px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .customer-container {
-    max-width: 768px;
-    padding: 0 108px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .customer-container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
-
-.footer-container {
-  min-width: 320px;
-  max-width: 428px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-container {
-    max-width: 768px;
-    padding: 0 108px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .footer-container {
     max-width: 1158px;
     padding: 0 15px;
   }
@@ -538,6 +474,7 @@ button {
 .flex-container-advant {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 72px;
   column-gap: 24px;
 }
@@ -601,6 +538,7 @@ button {
 .flex-container-team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 24px;
   row-gap: 72px;
 }
@@ -691,6 +629,7 @@ button {
 .customers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
 }
@@ -802,13 +741,19 @@ button {
 .subscribe-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
   justify-content: center;
+  gap: 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .subscribe-flex {
     gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .subscribe-input-label {
+    width: 100%;
   }
 }
 
@@ -831,6 +776,12 @@ button {
   color: var(--white);
 
   transition: border-color var(--animation);
+}
+
+@media only screen and (max-width: 467px) {
+  .subscribe-input {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1016,6 +967,12 @@ button {
   border-radius: 4px;
 
   transition: transform var(--animation);
+}
+
+@media only screen and (max-width: 467px) {
+  .modal {
+    width: calc(100% - 60px);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1232,7 +1189,7 @@ button {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1298,6 +1255,10 @@ button {
   color: var(--pressed-state);
 }
 
+.mobile-menu .link.active {
+  color: var(--pressed-state);
+}
+
 .mobile-contacts {
   margin-bottom: 48px;
 }
@@ -1312,6 +1273,12 @@ button {
   color: var(--primary-brand);
 }
 
+@media only screen and (max-width: 467px) {
+  .mobile-contacts .telephone {
+    font-size: 22px;
+  }
+}
+
 .mobile-contacts .email {
   font-weight: 500;
   font-size: 20px;
@@ -1323,4 +1290,10 @@ button {
   width: 328px;
   display: flex;
   gap: 56px;
+}
+
+@media only screen and (max-width: 467px) {
+  .mobile-socials {
+    gap: 24px;
+  }
 }
