@@ -64,7 +64,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -75,7 +75,7 @@ button {
   padding: 96px 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .section {
     padding: 120px 0;
   }
@@ -138,7 +138,7 @@ button {
   transition: color var(--animation);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .address-item {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -197,7 +197,7 @@ button {
   margin-right: 120px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .logotype {
     margin-right: 76px;
   }
@@ -213,8 +213,8 @@ button {
 }
 
 .footer-logo-link {
-  display: inline-block;
-  margin: 0 auto;
+  display: block;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -248,7 +248,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .heading-main {
     margin-bottom: 48px;
   }
@@ -307,7 +307,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .heading-third.feature {
     font-weight: 500;
     font-size: 20px;
@@ -461,7 +461,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .hero {
     padding: 188px 0;
     height: 600px;
@@ -489,7 +489,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .container-advant {
     width: 264px;
   }
@@ -499,7 +499,7 @@ button {
   display: none;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .features-item {
     width: 264px;
     height: 112px;
@@ -698,10 +698,10 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .footer-flex {
     gap: 0;
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -715,7 +715,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .container-footer {
     margin-right: 120px;
   }
@@ -723,7 +723,7 @@ button {
 
 .subscribe-form {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -732,7 +732,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .subscribe-form {
     margin-left: 80px;
   }
@@ -814,11 +814,13 @@ button {
   color: transparent;
 }
 
+/* Portfoilio Page */
+
 .works-section {
   padding-bottom: 120px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .works-section {
     padding-top: 96px;
   }
@@ -846,7 +848,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .filter-list {
     padding-top: 100px;
     padding-bottom: 72px;
@@ -878,7 +880,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .works-list-item {
     width: 360px;
   }
@@ -930,6 +932,8 @@ button {
   transform: translateY(0%);
 }
 
+/* Modal Window */
+
 .backdrop {
   /* display: none; */
   position: fixed;
@@ -972,6 +976,30 @@ button {
 @media only screen and (max-width: 467px) {
   .modal {
     width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 419px) {
+  .modal {
+    min-height: 500px;
+    transform: translate(-50%, -50%) scale(0.6);
+    padding-top: 26px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-height: 420px) and (max-height: 509px) {
+  .modal {
+    min-height: 500px;
+    transform: translate(-50%, -50%) scale(0.75);
+    padding-top: 26px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-height: 510px) and (max-height: 600px) {
+  .modal {
+    min-height: 500px;
+    transform: translate(-50%, -50%) scale(0.9);
+    padding-top: 26px;
   }
 }
 
@@ -1034,6 +1062,13 @@ button {
   color: var(--dark-grey);
 
   margin-bottom: 16px;
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .modal-form-title {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 .modal-label {
@@ -1121,6 +1156,12 @@ button {
   margin-bottom: 24px;
 }
 
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .checkbox-group {
+    margin-bottom: 16px;
+  }
+}
+
 .checkbox-input {
   appearance: none;
 
@@ -1153,9 +1194,9 @@ button {
 .modal-send-button {
   display: block;
   margin: 0 auto;
-  padding: 16px 32px;
   width: 169px;
   height: 56px;
+  padding: 16px 32px;
 
   border: none;
   color: var(--white);
@@ -1166,10 +1207,19 @@ button {
   transition: background-color var(--animation);
 }
 
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .modal-send-button {
+    height: 36px;
+    padding: 6px 32px;
+  }
+}
+
 .modal-send-button:focus,
 .modal-send-button:hover {
   background-color: var(--pressed-state);
 }
+
+/* Mobile Menu */
 
 .menu-icon {
   stroke: var(--dark-grey);
